@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Surely, we have run into many difficulties. When implementing the floating search bar, we encounter a typical problem when you using a third party library. It has a bug if the fragment containing the floating, search bar is not the first one showing. The menu item on the search bar will no longer function and the program will crush if you click on the item. The bug disappears when you show the fragment with search bar first. However, our default view that shows up first is coupon fragment. After investigating this bug for a while, we still don’t know the logic behind this problem. Instead, we take a walkaround. When the app is launching, we show the map fragment(containing the floating search bar) first and use coupon fragment overlay it immediately. Users cannot notified the difference since the transaction happen so quickly."
+            android:id="@+id/demo_textView"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/demo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Summarized"/>
+
+        <TextView
+            android:id="@+id/demo_textView_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+</ScrollView>
